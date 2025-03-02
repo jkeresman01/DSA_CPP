@@ -8,19 +8,19 @@ class LinkedList
     public:
         LinkedList();
         
-        Node<T> * Get(int32_t index) const;
+        Node<T> * Get(const int32_t index) const;
 
-        void InsertHead(T value);
-        void InsertTail(T value);
-        void Insert(int32_t index, T value);
+        void InsertHead(const T value);
+        void InsertTail(const  T value);
+        void Insert(const int32_t index, const T value);
 
-        int32_t Search(T value) const;
+        int32_t Search(const T value) const;
 
         void RemoveHead();
         void RemoveTail();
-        void Remove(int32_t index);
+        void Remove(const int32_t index);
 
-        int32_t Count() const;
+        int32_t GetCount() const;
         void Print() const;
 
         Node<T> * GetHead() const;

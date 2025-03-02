@@ -11,7 +11,7 @@ LinkedList<T>::LinkedList() : m_Count(0)
 }
         
 template <typename T>
-Node<T> * LinkedList<T>::Get(int32_t index) const
+Node<T> * LinkedList<T>::Get(const int32_t index) const
 {
     if(index < 0 || index > m_Count)
     {
@@ -29,7 +29,7 @@ Node<T> * LinkedList<T>::Get(int32_t index) const
 }
 
 template <typename T>
-void LinkedList<T>::InsertHead(T value)
+void LinkedList<T>::InsertHead(const T value)
 {
     Node<T> * node = new Node<T>(value);
     node->Next = m_Head;
@@ -45,7 +45,7 @@ void LinkedList<T>::InsertHead(T value)
 }
 
 template <typename T>
-void LinkedList<T>::InsertTail(T value)
+void LinkedList<T>::InsertTail(const T value)
 {
     if(m_Count == 0)
     {
@@ -63,7 +63,7 @@ void LinkedList<T>::InsertTail(T value)
 }
 
 template <typename T>
-void LinkedList<T>::Insert(int32_t index, T value)
+void LinkedList<T>::Insert(const int32_t index, const T value)
 {
    if(index < 0 || index > m_Count)
    {
@@ -100,7 +100,7 @@ void LinkedList<T>::Insert(int32_t index, T value)
 }
 
 template <typename T>
-int32_t LinkedList<T>::Search(T value) const
+int32_t LinkedList<T>::Search(const T value) const
 {
     if(m_Count == 0)
     {
@@ -174,7 +174,7 @@ void LinkedList<T>::RemoveTail()
 }
 
 template <typename T>
-void LinkedList<T>::Remove(int32_t index)
+void LinkedList<T>::Remove(const int32_t index)
 {
     if(m_Count == 0)
     {
@@ -215,7 +215,7 @@ void LinkedList<T>::Remove(int32_t index)
 }
 
 template <typename T>
-int32_t LinkedList<T>::Count() const
+int32_t LinkedList<T>::GetCount() const
 {
     return m_Count;
 }

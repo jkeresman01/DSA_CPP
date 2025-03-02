@@ -78,6 +78,13 @@ void GetTail(const LinkedList<int32_t> &linkedList)
     std::cout << "Tail: " << tail->Value << "\r\n";
 }
 
+void GetCount(const LinkedList<int32_t> &linkedList)
+{
+    int32_t count = linkedList.GetCount();
+    std::cout << "Tail: " << count << "\r\n";
+}
+
+
 int main()
 {
     LinkedList<int32_t> linkedList;
@@ -94,4 +101,5 @@ int main()
 
     GetHead(linkedList);
     GetTail(linkedList);
+    GetCount(linkedList);
 }
