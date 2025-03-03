@@ -5,9 +5,7 @@
 #include <queue>
 
 template <typename T>
-BST<T>::BST() {
-    std::cout << "Construct" << std::endl;
-}
+BST<T>::BST() { }
 
 template <typename T>
 void BST<T>::Insert(const T &key)
