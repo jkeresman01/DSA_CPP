@@ -245,3 +245,5 @@ void LinkedList<T>::Print() const
 
     std::cout << "NULL" << "\r\n";
 }
+
+template class LinkedList<int32_t>;

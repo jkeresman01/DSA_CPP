@@ -102,6 +102,4 @@ int main()
     GetHead(linkedList);
     GetTail(linkedList);
     GetCount(linkedList);
-
-    linkedList.PrintBackwards();
 }
