@@ -28,8 +28,6 @@ void PrintStack(Stack<int32_t> &stack)
 int main()
 {
     Stack<int32_t> stack;
-
     FillStack(stack);
-
     PrintStack(stack);
 }
