@@ -79,7 +79,6 @@ bool BST<T>::Search(const T &key) const
 template <typename T>
 BSTNode<T> *BST<T>::Insert(BSTNode<T> *node, const int32_t &key)
 {
-
     if(node == NULL)
     {
         node = new BSTNode<T>;
@@ -114,7 +113,6 @@ void BST<T>::BFS(BSTNode<T> *node) const
     while(!queue.empty())
     {
         BSTNode<T> * current = queue.front();
-#include <cstdint>
 
         if(current->Left != NULL)
         {
